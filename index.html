@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- Links to third party styles -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+
+        <!-- Link to custom Style Sheet -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Marvel Movie Database</title>
+    </head>
+
+    <body>
+
+        <!-- Every button groub needs to be in a div classed as 'video-buttons' -->
+        <div class="video-buttons">
+            <button id="iron-man" data-youtube="KAE5ymVLmZg" data-imdb="tt0371746">Iron Man</button>
+            <button id="hulk" data-youtube="xbqNb2PFKKA" data-imdb="tt0800080">The Incredible Hulk</button>
+            <button id="iron-man-2" data-youtube="wKtcmiifycU" data-imdb="tt1228705">Iron Man 2</button>
+            <button id="thor" data-youtube="JOddp-nlNvQ" data-imdb="tt0800369">Thor</button>
+            <button id="capt-america" data-youtube="JerVrbLldXw" data-imdb="tt0458339">Captain America: The First Avenger</button>
+            <button id="avengers" data-youtube="eOrNdBpGMv8" data-imdb="tt0848228">The Avengers</button>
+        </div>
+        <div class="video-buttons">
+        </div>
+
+        <!-- Here is the Embedded YouTube video -->
+        <iframe id="player" type="text/html" width="700" height="350"
+        src="http://www.youtube.com/embed/o-YBDTqX_ZU?enablejsapi=1&origin=http://example.com"
+        frameborder="0"></iframe>
+    
+        <!-- Here is the Movie data that will show up when a button is clicked -->
+        <div class="omdb-data">
+            <h3 id="movie-title"></h3>
+            <h4 id="release-year"></h4>
+            <h4 id="rating"></h4>
+            <p id="imdb-rating"></p>
+            <p id="tomato-rating"></p>
+            <p id="metacritic-rating"></p>
+            <p id="runtime"></p>
+            <p id="director"></p>
+            <p id="writer"></p>
+            <p id="actors"></p>
+            <p id="plot"></p>
+            <img id="movie-poster">
+        </div>
+
+
+
+
+
+
+        
+        <!-- Links to Third Party Scripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script> 
+
+        <!-- Link to custom JavaScript -->
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
